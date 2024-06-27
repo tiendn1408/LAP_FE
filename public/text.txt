@@ -1,0 +1,66 @@
+  {/* <div className="w-[1190px] h-[100px] px-10 bg-white rounded-lg shadow-lg flex flex-row items-center justify-between">
+        <div className="flex flex-row gap-5 items-center">
+          {enableEdit ? (
+            <input
+              className="text-2xl min-w-[250px] transition-all max-w-[500px] font-medium outline-none border-b-2 resize-x py-2 px-1"
+              value={assignmentName}
+              maxLength={45}
+              ref={assignmenNameRef}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  assignmentName === 'Assignment Name'
+                    ? setAssignmentName('')
+                    : setAssignmentName(assignmentName)
+                  setEnableEdit(!enableEdit)
+                  assignmenNameRef.current.focus()
+                }
+              }}
+              onChange={(e) => {
+                setAssignmentName(e.target.value)
+              }}
+              style={{ width: `${assignmentName.length}ch` }}
+            />
+          ) : (
+            <input
+              className="text-2xl min-w-[250px] transition-all max-w-[500px] font-medium resize-x outline-none py-2 px-1"
+              value={assignmentName}
+              ref={assignmenNameRef}
+              maxLength={45}
+              style={{ width: `${assignmentName.length}ch` }}
+              readOnly
+            />
+          )}
+          <i
+            className="fas fa-edit cursor-pointer hover:text-primary transition-all"
+            onClick={() => {
+              assignmentName === 'Assignment Name'
+                ? setAssignmentName('')
+                : setAssignmentName(assignmentName)
+              setEnableEdit(!enableEdit)
+              assignmenNameRef.current.focus()
+            }}
+          ></i>
+        </div>
+        <div className="flex flex-row gap-5 items-center">
+          <input
+            type="time"
+            value={time}
+            onChange={(e) => {
+              setTime(e.target.value)
+            }}
+            className="outline-none border transition-all border-gray-500 px-2 py-1 rounded-md "
+          />
+          <DatePicker
+            colorPrimary="#75b9cc"
+            value={selectedDay}
+            onChange={setSelectedDay}
+            inputPlaceholder="Select a date"
+            formatInputText={formatInputValue}
+            minimumDate={utils().getToday()}
+            inputClassName="daypicker"
+          />
+          <Button className="border-none" onClick={handleCreateAssignment}>
+            Save
+          </Button>
+        </div>
+      </div> */}

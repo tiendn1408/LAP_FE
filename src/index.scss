@@ -1,0 +1,207 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  body {
+    @apply font-primary text-base bg-[#f4f7f9];
+  }
+}
+@layer components 
+  .page-container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-1-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+
+.teacherdetails__AScore {
+  background-image: linear-gradient(
+    0deg,
+    rgba(246, 246, 246, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.teacherdetails__Topics {
+  background-image: linear-gradient(
+    213.44deg,
+    #9fff24 67.39%,
+    rgba(178, 222, 122, 0) 108.35%
+  );
+}
+
+.teacherdetails__Students {
+  background-image: linear-gradient(
+    213.44deg,
+    rgba(255, 36, 207, 0.47) 67.39%,
+    rgba(203, 156, 211, 0) 108.35%
+  );
+}
+
+.custom-today-day {
+  color: #75b9cc !important;
+  border: 1px solid #75b9cc !important;
+}
+
+.deadline:not(.-selectedStart):not(.-selectedBetween):not(.-selectedEnd):not(.-selected) {
+  color: red !important;
+  border: 1px solid red !important;
+}
+
+.custom-today-day::after {
+  visibility: hidden; /* hide small border under the text */
+}
+
+.Calendar__footer {
+  padding-bottom: 3rem !important;
+}
+
+.chartJS {
+  padding: 1rem 2rem !important;
+  width: 100%;
+  height: 100%;
+
+  // height: 322px !important;
+  // width: 90% !important;
+}
+
+.teacherMathField {
+  padding: 4rem 2rem !important;
+}
+
+#formula::disabled {
+  color: black !important;
+  background: black !important;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.daypicker {
+  @apply rounded-md font-semibold transition-all border border-gray-500 #{!important};
+}
+
+.daypicker:hover {
+  @apply border border-primary cursor-pointer duration-500 text-gray-500 #{!important};
+}
+
+.daypicker:focus {
+  @apply outline-primary #{!important};
+}
+.achievementSwiper {
+  @apply py-5 #{!important};
+}
+
+.dropdown-content {
+  position: absolute;
+  inset: 0px auto auto 0px;
+  margin: 0px;
+  transform: translate3d(0px, 533.333px, 0px);
+}
+
+.DatePicker {
+  z-index: 1 !important;
+}
+
+.ReactModalPortal > div {
+  z-index: 5 !important;
+}
+
+// @font-face {
+//     font-family: 'Material Icons';
+//     font-style: normal;
+//     font-weight: 400;
+//     src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+//     src: local('Material Icons'), local('MaterialIcons-Regular'),
+//         url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+//         url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+//         url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+// }
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  @apply text-primary #{!important};
+}
+
+#Bank-modal-formula {
+  @apply border max-h-[200px] rounded-md mt-2;
+}
